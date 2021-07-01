@@ -127,7 +127,7 @@ class _CameraDeepArState extends State<CameraDeepAr> {
 
   @override
   void dispose() {
-    // TODO: implement dispose
+    if (_controller != null) _controller?.dispose();
     super.dispose();
   }
 
